@@ -5,8 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
-         /*
         task6();
+        /*
         task7();
         task8();
        */
@@ -115,15 +115,51 @@ public class Main {
              + totalBrownPaint + " банок коричневой краски");
 
     }
-/*
+
     public static void task6 () {
         System.out.println("Задача 6");
-        ... // Пишем код для задачи 6
+        //Спортсмены следят за своим весом и тщательно относятся к тому, что и сколько они съедают.
+        //Вот один из рецептов, по которому спортсмен готовит себе завтрак:
+        //Бананы — 5 штук (1 банан — 80 грамм).
+        //Молоко — 200 мл (100 мл = 105 грамм).
+        //Мороженое-пломбир — 2 брикета по 100 грамм.
+        //Яйца сырые – 4 яйца (1 яйцо — 70 грамм).
+        //Смешать всё в блендере — и готово.
+        //Подсчитайте вес (количество граммов) такого спортзавтрака, а затем переведите его в килограммы.
+        //Результат в граммах и килограммах напечатайте в консоль.
+        byte bananas = 5;
+        byte bananasWeight = 80;
+            int totalWeightBananas = bananas * bananasWeight;
+            System.out.println("вес бананов " + totalWeightBananas + " грамм");
+        short milk = 200;
+        byte milkWeight100Ml = 105;
+            double milkWeight = milkWeight100Ml / 100d;
+            double totalWeightMilk = milk * milkWeight;
+            System.out.println("вес молока " + totalWeightMilk + " грамм");
+        byte iceCream = 2;
+        byte iceCreamWeight = 100;
+            int totalWeightIceCream = iceCreamWeight * iceCream;
+            System.out.println("вес мороженого " + totalWeightIceCream + " грамм");
+
+        byte eggs = 4;
+        byte eggWeight = 70;
+             int totalWeightEggs = eggWeight * eggs;
+            System.out.println("вес яиц " + totalWeightEggs + " грамм");
+
+        double totalWeightProduct = totalWeightEggs +  totalWeightBananas + totalWeightMilk + totalWeightIceCream;
+        double totalWeightProductKg = totalWeightProduct / 1000d;
+        System.out.println("Общий вес такого завтрака составил " + totalWeightProduct + " грамм, или "
+                + totalWeightProductKg + " кг!" );
+
+
+
     }
+    /*
     public static void task7 () {
         System.out.println("Задача 7");
         ... // Пишем код для задачи 7
     }
+    /*
 
     public static void task8 () {
         System.out.println("Задача 8");
