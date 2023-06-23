@@ -7,11 +7,8 @@ public class Main {
         task5();
         task6();
         task7();
-        /*
         task8();
-       */
     }
-
     public static void task1 () {
         System.out.println("Задача 1");
        //Объявите переменные типа int, byte, short, long, float, double.
@@ -30,7 +27,6 @@ public class Main {
             System.out.println("Значение переменной f с типом double равно " + f);
 
     }
-
     public static void task2 () {
         System.out.println("Задача 2");
         //Инициализируйте переменные
@@ -57,7 +53,6 @@ public class Main {
         double value = 2.786d;
             System.out.println("Значение переменной value с типом double равно " + value);
     }
-
     public static void task3 () {
         System.out.println("Задача 3");
         //Три школьных учителя, Людмила Павловна, Анна Сергеевна и Екатерина Андреевна, ведут три класса.
@@ -77,7 +72,6 @@ public class Main {
         int pagesForStudent = (totalPages / totalStudents);
         System.out.println("На каждого ученика рассчитано " + pagesForStudent + " листов бумаги");
     }
-
     public static void task4 () {
         System.out.println("Задача 4");
         // Производительность машины для изготовления бутылок — 16 бутылок за 2 минуты. Какая производительность машины будет:
@@ -98,7 +92,6 @@ public class Main {
             System.out.println("За 1 месяц машина произвела " + capacityMonth + " штук бутылок");
 
     }
-
     public static void task5 () {
         System.out.println("Задача 5");
         //На ремонт школы нужно 120 банок краски двух цветов: белой и коричневой.
@@ -115,7 +108,6 @@ public class Main {
              + totalBrownPaint + " банок коричневой краски");
 
     }
-
     public static void task6 () {
         System.out.println("Задача 6");
         //Спортсмены следят за своим весом и тщательно относятся к тому, что и сколько они съедают.
@@ -154,7 +146,6 @@ public class Main {
 
 
     }
-
     public static void task7 () {
         System.out.println("Задача 7");
 //Правила соревнований обновились, и спортсмену, чтобы оставаться в своей весовой категории, нужно сбросить 7 кг.
@@ -176,11 +167,55 @@ public class Main {
             System.out.println("Потребуется " + totalDaysSecondWay + " дней, при трате 500 граммов веса в день!");
 
     }
-    /*
-
     public static void task8 () {
         System.out.println("Задача 8");
-        ... // Пишем код для задачи 8
+        //провести расчет для следующих сотрудников:
+        //Маша получает 67 760 рублей в месяц.
+        //Денис получает 83 690 рублей в месяц.
+        //Кристина получает 76 230 рублей в месяц.
+        //Каждому нужно увеличить зарплату на 10% от текущей месячной.
+        //Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
+        //Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
+        //Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
+
+        int monthSalaryMasha = 67760;
+        int yearSalaryMasha = monthSalaryMasha * 12;
+            float monthSalaryMashaUp = monthSalaryMasha * 0.1f;
+            float monthSalaryMashaNew = monthSalaryMashaUp + monthSalaryMasha;
+            System.out.println("Текущая зарплата Маши " + monthSalaryMasha + " рублей. Годовой доход состовляет "
+                    + yearSalaryMasha + " рублей в год.");
+            float yearSalaryMashaNew = monthSalaryMashaNew * 12;
+            float yearSalaryMashaUp = monthSalaryMashaUp * 12;
+            System.out.println("После увеличения зарплаты на 10%" +
+                    " Маша теперь получает  " + monthSalaryMashaNew + " рублей, что больше на " + monthSalaryMashaUp +
+                    " рублей в месяц. Годовой доход вырос на " + yearSalaryMashaUp +
+                    " рублей, и теперь составляет " + yearSalaryMashaNew + " рублей за год.");
+
+        int monthSalaryDenis = 83690;
+        int yearSalaryDenis = monthSalaryDenis * 12;
+            float monthSalaryDenisUp = monthSalaryDenis * 0.1f;
+            float monthSalaryDenisNew = monthSalaryDenisUp + monthSalaryDenis;
+            System.out.println("Текущая зарплата Дениса " + monthSalaryDenis + " рублей. Годовой доход состовляет "
+                    + yearSalaryDenis + " рублей в год.");
+            float yearSalaryDenisNew = monthSalaryDenisNew * 12;
+            float yearSalaryDenisUp = monthSalaryDenisUp * 12;
+            System.out.println("После увеличения зарплаты на 10%" +
+                    " Денис теперь получает  " + monthSalaryDenisNew + " рублей, что больше на "
+                    + monthSalaryDenisUp + " рублей в месяц. Годовой доход вырос на " + yearSalaryDenisUp  +
+                    " рублей, и теперь составляет " + yearSalaryDenisNew + " рублей за год.");
+
+        int monthSalaryKristina = 76230;
+        int yearSalaryKristina = monthSalaryKristina * 12;
+            float monthSalaryKristinaUp = monthSalaryKristina * 0.1f;
+            float monthSalaryKristinaNew = monthSalaryKristinaUp + monthSalaryKristina;
+            System.out.println("Текущая зарплата Кристины " + monthSalaryKristina + " рублей. Годовой доход состовляет "
+                    + yearSalaryKristina + " рублей в год.");
+            float yearSalaryKristinaNew = monthSalaryKristinaNew * 12;
+            float yearSalaryKristinaUp = monthSalaryKristinaUp * 12;
+            System.out.println("После увеличения зарплаты на 10%" +
+                    " Кристина теперь получает  " + monthSalaryKristinaNew + " рублей, что больше на "
+                    + monthSalaryKristinaUp + " рублей в месяц. Годовой доход вырос на " + yearSalaryKristinaUp  +
+                    " рублей, и теперь составляет " + yearSalaryKristinaNew + " рублей за год.");
     }
-    */
+
 }
