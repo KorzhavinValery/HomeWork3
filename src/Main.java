@@ -6,8 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
-        /*
         task7();
+        /*
         task8();
        */
     }
@@ -154,10 +154,27 @@ public class Main {
 
 
     }
-    /*
+
     public static void task7 () {
         System.out.println("Задача 7");
-        ... // Пишем код для задачи 7
+//Правила соревнований обновились, и спортсмену, чтобы оставаться в своей весовой категории, нужно сбросить 7 кг.
+// Тренер скорректировал рацион так, чтобы спортсмен мог терять в весе от 250 до 500 грамм в день.
+//Посчитайте, сколько дней уйдет на похудение,
+//если спортсмен будет терять каждый день по 250 грамм, а сколько — если каждый день будет худеть на 500 грамм.
+//Посчитайте, сколько может потребоваться дней в среднем, чтобы добиться результата похудения.
+//Результаты всех подсчетов выведите в консоль.
+        byte target = 7;
+        short firstWay = 250;
+        float firstWeight = firstWay / 1000f;
+            System.out.println("В день теряет " + firstWeight + " кг");
+        short secondWay = 500;
+        float secondWeight = secondWay / 1000f;
+            System.out.println("В день теряет " + secondWeight + " кг");
+        float totalDaysFirstWay = target / firstWeight;
+            System.out.println("Потребуется " + totalDaysFirstWay + " дней, при трате 250 граммов веса в день!");
+        float totalDaysSecondWay = target / secondWeight;
+            System.out.println("Потребуется " + totalDaysSecondWay + " дней, при трате 500 граммов веса в день!");
+
     }
     /*
 
