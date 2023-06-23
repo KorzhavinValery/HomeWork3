@@ -3,10 +3,9 @@ public class Main {
         task1();
         task2();
         task3();
-
         task4();
-        /*
         task5();
+         /*
         task6();
         task7();
         task8();
@@ -99,12 +98,24 @@ public class Main {
             System.out.println("За 1 месяц машина произвела " + capacityMonth + " штук бутылок");
 
     }
-    /*
+
     public static void task5 () {
         System.out.println("Задача 5");
-        ... // Пишем код для задачи 5
-    }
+        //На ремонт школы нужно 120 банок краски двух цветов: белой и коричневой.
+        // На один класс уходит 2 банки белой и 4 банки коричневой краски. Сколько банок каждой краски было куплено?
+        //Выведите результат задачи в консоль в формате: «В школе, где … классов, нужно … банок белой краски и … банок коричневой краски».
+        byte canOfPaint = 120;
+        byte whitePaint = 2;
+        byte brownPaint = 4;
 
+        int numberOfClasses = canOfPaint / (whitePaint + brownPaint);
+        int totalWhitePaint = whitePaint * numberOfClasses;
+        int totalBrownPaint = brownPaint * numberOfClasses;
+            System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + totalWhitePaint + " банок белой краски и "
+             + totalBrownPaint + " банок коричневой краски");
+
+    }
+/*
     public static void task6 () {
         System.out.println("Задача 6");
         ... // Пишем код для задачи 6
