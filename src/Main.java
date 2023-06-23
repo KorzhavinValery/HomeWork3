@@ -11,8 +11,6 @@ public class Main {
     }
     public static void task1 () {
         System.out.println("Задача 1");
-       //Объявите переменные типа int, byte, short, long, float, double.
-       // Выведите в консоль значение каждой переменной в формате «Значение переменной … с типом … равно …».
         byte a = 2;
             System.out.println("Значение переменной a с типом byte равно " + a);
         short b = 200;
@@ -25,19 +23,9 @@ public class Main {
             System.out.println("Значение переменной e с типом float равно " + e);
         double f = 1.7d;
             System.out.println("Значение переменной f с типом double равно " + f);
-
     }
     public static void task2 () {
         System.out.println("Задача 2");
-        //Инициализируйте переменные
-        // 27.12
-        //987 678 965 549
-        //2.786
-        //569
-        //-159
-        //27897
-        //67
-
         byte apples = 67;
             System.out.println("Значение переменной apples с типом byte равно " + apples + " штук");
         short bananas = 569;
@@ -55,15 +43,6 @@ public class Main {
     }
     public static void task3 () {
         System.out.println("Задача 3");
-        //Три школьных учителя, Людмила Павловна, Анна Сергеевна и Екатерина Андреевна, ведут три класса.
-        //
-        //У Людмилы Павловны — 23 ученика , у Анны Сергеевны — 27 учеников, у Екатерины Андреевны — 30 учеников.
-        //
-        //Три учительницы закупили все вместе 480 листов бумаги на все три класса. Посчитайте, сколько достанется листов каждому ученику.
-        //
-        //Результат задачи выведите в консоль в формате: «На каждого ученика рассчитано … листов бумаги».
-        //
-        //Для объявления переменных не используйте тип var.
         byte ludmilaPavlovna = 23;
         byte annaSergeevna = 27;
         byte ekaterinaAndreevna = 30;
@@ -74,11 +53,6 @@ public class Main {
     }
     public static void task4 () {
         System.out.println("Задача 4");
-        // Производительность машины для изготовления бутылок — 16 бутылок за 2 минуты. Какая производительность машины будет:
-        //за 20 минут, в сутки,    за 3 дня,   за 1 месяц?
-        //  Рассчитывайте производительность работы машины в том случае, если она работает без перерыва заданный промежуток времени.
-         //    Результаты подсчетов выведите в консоль в формате: «За … машина произвела … штук бутылок».
-
         byte capacity2Min = 16;
         int capacity = capacity2Min / 2;
         int capacityHour = capacity * 60;
@@ -90,35 +64,20 @@ public class Main {
             System.out.println("За 3 дня машина произвела " + capacity3Days + " штук бутылок");
         int capacityMonth = capacityDay * 30;
             System.out.println("За 1 месяц машина произвела " + capacityMonth + " штук бутылок");
-
     }
     public static void task5 () {
         System.out.println("Задача 5");
-        //На ремонт школы нужно 120 банок краски двух цветов: белой и коричневой.
-        // На один класс уходит 2 банки белой и 4 банки коричневой краски. Сколько банок каждой краски было куплено?
-        //Выведите результат задачи в консоль в формате: «В школе, где … классов, нужно … банок белой краски и … банок коричневой краски».
         byte canOfPaint = 120;
         byte whitePaint = 2;
         byte brownPaint = 4;
-
-        int numberOfClasses = canOfPaint / (whitePaint + brownPaint);
-        int totalWhitePaint = whitePaint * numberOfClasses;
-        int totalBrownPaint = brownPaint * numberOfClasses;
+            int numberOfClasses = canOfPaint / (whitePaint + brownPaint);
+            int totalWhitePaint = whitePaint * numberOfClasses;
+            int totalBrownPaint = brownPaint * numberOfClasses;
             System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + totalWhitePaint + " банок белой краски и "
              + totalBrownPaint + " банок коричневой краски");
-
     }
     public static void task6 () {
         System.out.println("Задача 6");
-        //Спортсмены следят за своим весом и тщательно относятся к тому, что и сколько они съедают.
-        //Вот один из рецептов, по которому спортсмен готовит себе завтрак:
-        //Бананы — 5 штук (1 банан — 80 грамм).
-        //Молоко — 200 мл (100 мл = 105 грамм).
-        //Мороженое-пломбир — 2 брикета по 100 грамм.
-        //Яйца сырые – 4 яйца (1 яйцо — 70 грамм).
-        //Смешать всё в блендере — и готово.
-        //Подсчитайте вес (количество граммов) такого спортзавтрака, а затем переведите его в килограммы.
-        //Результат в граммах и килограммах напечатайте в консоль.
         byte bananas = 5;
         byte bananasWeight = 80;
             int totalWeightBananas = bananas * bananasWeight;
@@ -132,28 +91,17 @@ public class Main {
         byte iceCreamWeight = 100;
             int totalWeightIceCream = iceCreamWeight * iceCream;
             System.out.println("вес мороженого " + totalWeightIceCream + " грамм");
-
         byte eggs = 4;
         byte eggWeight = 70;
              int totalWeightEggs = eggWeight * eggs;
             System.out.println("вес яиц " + totalWeightEggs + " грамм");
-
         double totalWeightProduct = totalWeightEggs +  totalWeightBananas + totalWeightMilk + totalWeightIceCream;
         double totalWeightProductKg = totalWeightProduct / 1000d;
         System.out.println("Общий вес такого завтрака составил " + totalWeightProduct + " грамм, или "
                 + totalWeightProductKg + " кг!" );
-
-
-
     }
     public static void task7 () {
         System.out.println("Задача 7");
-//Правила соревнований обновились, и спортсмену, чтобы оставаться в своей весовой категории, нужно сбросить 7 кг.
-// Тренер скорректировал рацион так, чтобы спортсмен мог терять в весе от 250 до 500 грамм в день.
-//Посчитайте, сколько дней уйдет на похудение,
-//если спортсмен будет терять каждый день по 250 грамм, а сколько — если каждый день будет худеть на 500 грамм.
-//Посчитайте, сколько может потребоваться дней в среднем, чтобы добиться результата похудения.
-//Результаты всех подсчетов выведите в консоль.
         byte target = 7;
         short firstWay = 250;
         float firstWeight = firstWay / 1000f;
@@ -165,19 +113,9 @@ public class Main {
             System.out.println("Потребуется " + totalDaysFirstWay + " дней, при трате 250 граммов веса в день!");
         float totalDaysSecondWay = target / secondWeight;
             System.out.println("Потребуется " + totalDaysSecondWay + " дней, при трате 500 граммов веса в день!");
-
     }
     public static void task8 () {
         System.out.println("Задача 8");
-        //провести расчет для следующих сотрудников:
-        //Маша получает 67 760 рублей в месяц.
-        //Денис получает 83 690 рублей в месяц.
-        //Кристина получает 76 230 рублей в месяц.
-        //Каждому нужно увеличить зарплату на 10% от текущей месячной.
-        //Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
-        //Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
-        //Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
-
         int monthSalaryMasha = 67760;
         int yearSalaryMasha = monthSalaryMasha * 12;
             float monthSalaryMashaUp = monthSalaryMasha * 0.1f;
@@ -190,7 +128,6 @@ public class Main {
                     " Маша теперь получает  " + monthSalaryMashaNew + " рублей, что больше на " + monthSalaryMashaUp +
                     " рублей в месяц. Годовой доход вырос на " + yearSalaryMashaUp +
                     " рублей, и теперь составляет " + yearSalaryMashaNew + " рублей за год.");
-
         int monthSalaryDenis = 83690;
         int yearSalaryDenis = monthSalaryDenis * 12;
             float monthSalaryDenisUp = monthSalaryDenis * 0.1f;
@@ -203,7 +140,6 @@ public class Main {
                     " Денис теперь получает  " + monthSalaryDenisNew + " рублей, что больше на "
                     + monthSalaryDenisUp + " рублей в месяц. Годовой доход вырос на " + yearSalaryDenisUp  +
                     " рублей, и теперь составляет " + yearSalaryDenisNew + " рублей за год.");
-
         int monthSalaryKristina = 76230;
         int yearSalaryKristina = monthSalaryKristina * 12;
             float monthSalaryKristinaUp = monthSalaryKristina * 0.1f;
