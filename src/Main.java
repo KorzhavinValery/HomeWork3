@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
         task1();
-      /*  task2();
+        task2();
+        /*
         task3();
         task4();
         task5();
         task6();
         task7();
         task8();
-
        */
     }
 
@@ -30,11 +30,34 @@ public class Main {
             System.out.println("Значение переменной f с типом double равно " + f);
 
     }
-    /*
+
     public static void task2 () {
         System.out.println("Задача 2");
-        ... // Пишем код для задачи 2
+        //Инициализируйте переменные
+        // 27.12
+        //987 678 965 549
+        //2.786
+        //569
+        //-159
+        //27897
+        //67
+
+        byte apples = 67;
+            System.out.println("Значение переменной apples с типом byte равно " + apples + " штук");
+        short bananas = 569;
+            System.out.println("Значение переменной bananas с типом short равно " + bananas + " штук");
+        short temperature = -159;
+            System.out.println("Значение переменной temperature с типом short равно " + temperature + " градусов");
+        int distance = 27897;
+            System.out.println("Значение переменной distance с типом int равно " + distance + " км");
+        long numbers = 987678965549L;
+            System.out.println("Значение переменной numbers с типом long равно " + numbers);
+        float decimal = 27.12f;
+            System.out.println("Значение переменной decimal с типом float равно " + decimal);
+        double value = 2.786d;
+            System.out.println("Значение переменной value с типом double равно " + value);
     }
+     /*
     public static void task3 () {
         System.out.println("Задача 3");
         ... // Пишем код для задачи 3
