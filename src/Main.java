@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-        /*
         task3();
+     /*
         task4();
         task5();
         task6();
@@ -57,12 +57,27 @@ public class Main {
         double value = 2.786d;
             System.out.println("Значение переменной value с типом double равно " + value);
     }
-     /*
+
     public static void task3 () {
         System.out.println("Задача 3");
-        ... // Пишем код для задачи 3
+        //Три школьных учителя, Людмила Павловна, Анна Сергеевна и Екатерина Андреевна, ведут три класса.
+        //
+        //У Людмилы Павловны — 23 ученика , у Анны Сергеевны — 27 учеников, у Екатерины Андреевны — 30 учеников.
+        //
+        //Три учительницы закупили все вместе 480 листов бумаги на все три класса. Посчитайте, сколько достанется листов каждому ученику.
+        //
+        //Результат задачи выведите в консоль в формате: «На каждого ученика рассчитано … листов бумаги».
+        //
+        //Для объявления переменных не используйте тип var.
+        byte ludmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short totalPages = 480;
+        int totalStudents = ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna;
+        int pagesForStudent = (totalPages / totalStudents);
+        System.out.println("На каждого ученика рассчитано " + pagesForStudent + " листов бумаги");
     }
-
+/*
     public static void task4 () {
         System.out.println("Задача 4");
         ... // Пишем код для задачи 4
