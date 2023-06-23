@@ -3,8 +3,9 @@ public class Main {
         task1();
         task2();
         task3();
-     /*
+
         task4();
+        /*
         task5();
         task6();
         task7();
@@ -77,11 +78,28 @@ public class Main {
         int pagesForStudent = (totalPages / totalStudents);
         System.out.println("На каждого ученика рассчитано " + pagesForStudent + " листов бумаги");
     }
-/*
+
     public static void task4 () {
         System.out.println("Задача 4");
-        ... // Пишем код для задачи 4
+        // Производительность машины для изготовления бутылок — 16 бутылок за 2 минуты. Какая производительность машины будет:
+        //за 20 минут, в сутки,    за 3 дня,   за 1 месяц?
+        //  Рассчитывайте производительность работы машины в том случае, если она работает без перерыва заданный промежуток времени.
+         //    Результаты подсчетов выведите в консоль в формате: «За … машина произвела … штук бутылок».
+
+        byte capacity2Min = 16;
+        int capacity = capacity2Min / 2;
+        int capacityHour = capacity * 60;
+        int capacity20Min = capacity * 20;
+            System.out.println("За 20 минут машина произвела " + capacity20Min + " штук бутылок");
+        int capacityDay = capacityHour * 24;
+            System.out.println("За 1 день машина произвела " + capacityDay + " штук бутылок");
+        int capacity3Days = capacityDay * 3;
+            System.out.println("За 3 дня машина произвела " + capacity3Days + " штук бутылок");
+        int capacityMonth = capacityDay * 30;
+            System.out.println("За 1 месяц машина произвела " + capacityMonth + " штук бутылок");
+
     }
+    /*
     public static void task5 () {
         System.out.println("Задача 5");
         ... // Пишем код для задачи 5
